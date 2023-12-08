@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(323, 62);
+            this.label1.Location = new System.Drawing.Point(323, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 33);
             this.label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(190, 133);
+            this.label2.Location = new System.Drawing.Point(190, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(133, 30);
             this.label2.TabIndex = 1;
@@ -59,16 +59,17 @@
             // 
             // uidbox
             // 
-            this.uidbox.Location = new System.Drawing.Point(329, 135);
+            this.uidbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.uidbox.Location = new System.Drawing.Point(329, 152);
             this.uidbox.Name = "uidbox";
-            this.uidbox.Size = new System.Drawing.Size(231, 28);
+            this.uidbox.Size = new System.Drawing.Size(231, 31);
             this.uidbox.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(190, 200);
+            this.label3.Location = new System.Drawing.Point(190, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 30);
             this.label3.TabIndex = 3;
@@ -76,9 +77,10 @@
             // 
             // upwdbox
             // 
-            this.upwdbox.Location = new System.Drawing.Point(329, 202);
+            this.upwdbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.upwdbox.Location = new System.Drawing.Point(329, 220);
             this.upwdbox.Name = "upwdbox";
-            this.upwdbox.Size = new System.Drawing.Size(231, 28);
+            this.upwdbox.Size = new System.Drawing.Size(231, 31);
             this.upwdbox.TabIndex = 4;
             // 
             // label4
@@ -86,7 +88,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(325, 277);
+            this.label4.Location = new System.Drawing.Point(325, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 24);
             this.label4.TabIndex = 6;
@@ -96,7 +98,7 @@
             // submit
             // 
             this.submit.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.submit.Location = new System.Drawing.Point(448, 264);
+            this.submit.Location = new System.Drawing.Point(448, 288);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(112, 51);
             this.submit.TabIndex = 7;
@@ -108,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(778, 444);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.upwdbox);
@@ -117,6 +119,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AccountBook";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AccountBook";
             this.ResumeLayout(false);
             this.PerformLayout();

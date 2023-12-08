@@ -172,5 +172,6 @@ namespace AccountBook
                 txt_code.Font = new Font("Times New Roman", 14F);
             }
         }
+
     }
 }
