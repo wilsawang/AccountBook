@@ -12,11 +12,12 @@ namespace AccountBook
 {
     public partial class Mainwindow : Form
     {
-        static string uid;
-        public Mainwindow(string id)
+        static string uid, _pwd;
+        public Mainwindow(string id, string pwd)
         {
             InitializeComponent();
             uid = id;
+            _pwd = pwd;
             welcome_str.Text = "欢迎您, " + uid + "用户!";
         }
 
@@ -38,8 +39,9 @@ namespace AccountBook
         // 进入修改密码界面 
         private void btn_chgpwd_Click(object sender, EventArgs e)
         {
-            Chgpwd c = new Chgpwd(uid);
-            c.ShowDialog();
+            Chgpwd c = new Chgpwd(this, uid, _pwd);
+            c.Show();
+            this.Hide();
         }
 
         // 进入统计页面 
