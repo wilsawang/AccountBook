@@ -46,29 +46,18 @@ namespace AccountBook
             if (uid.Equals(""))
             {
                 MessageBox.Show("用户名不能为空！");
-                strTemp = validCode.UpdateVerifyCode();
-                code_pic.Image = validCode.CreateImage(strTemp);
-                txt_code.Text = "验证码不区分大小写";
-                txt_code.ForeColor = Color.Gray;
-                txt_code.Font = new Font("华文楷体", 9F);
             }
             else if (password.Equals(""))
             {
                 MessageBox.Show("密码不能为空！");
-                strTemp = validCode.UpdateVerifyCode();
-                code_pic.Image = validCode.CreateImage(strTemp);
-                txt_code.Text = "验证码不区分大小写";
-                txt_code.ForeColor = Color.Gray;
-                txt_code.Font = new Font("华文楷体", 9F);
+            }
+            else if (password.Length < 8)
+            {
+                MessageBox.Show("密码长度不能少于8位，请重新输入！");
             }
             else if (conf_psd!=password)
             {
                 MessageBox.Show("两遍密码不一致，请重新确认密码！");
-                strTemp = validCode.UpdateVerifyCode();
-                code_pic.Image = validCode.CreateImage(strTemp);
-                txt_code.Text = "验证码不区分大小写";
-                txt_code.ForeColor = Color.Gray;
-                txt_code.Font = new Font("华文楷体", 9F);
             }
             else if (txt_code.Text.StartsWith("验"))
             {
