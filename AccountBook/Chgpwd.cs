@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace AccountBook
 {
     public partial class Chgpwd : Form
     {
-        public Chgpwd()
+        static string uid;
+        public Chgpwd(string id)
         {
             InitializeComponent();
+            uid = id;
         }
     }
 }

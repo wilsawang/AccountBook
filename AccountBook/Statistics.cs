@@ -12,9 +12,11 @@ namespace AccountBook
 {
     public partial class Statistics : Form
     {
-        public Statistics()
+        static string uid;
+        public Statistics(string id)
         {
             InitializeComponent();
+            uid = id;
         }
     }
 }

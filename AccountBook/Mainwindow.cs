@@ -12,9 +12,11 @@ namespace AccountBook
 {
     public partial class Mainwindow : Form
     {
-        public Mainwindow()
+        static string uid;
+        public Mainwindow(string id)
         {
             InitializeComponent();
+            uid = id;
         }
 
         // 退出登录
@@ -28,28 +30,28 @@ namespace AccountBook
         // 进入我要记账页面 
         private void btn_account_Click(object sender, EventArgs e)
         {
-            Account a = new Account();
+            Account a = new Account(uid);
             a.ShowDialog();
         }
 
         // 进入修改密码界面 
         private void btn_chgpwd_Click(object sender, EventArgs e)
         {
-            Chgpwd c = new Chgpwd();
+            Chgpwd c = new Chgpwd(uid);
             c.ShowDialog();
         }
 
         // 进入统计页面 
         private void btn_statistics_Click(object sender, EventArgs e)
         {
-            Statistics s = new Statistics();
+            Statistics s = new Statistics(uid);
             s.ShowDialog();
         }
 
         // 进入分析页面
         private void btn_analyze_Click(object sender, EventArgs e)
         {
-            Analyze a = new Analyze();
+            Analyze a = new Analyze(uid);
             a.ShowDialog();
         }
     }

@@ -12,9 +12,11 @@ namespace AccountBook
 {
     public partial class Analyze : Form
     {
-        public Analyze()
+        static string uid;
+        public Analyze(string id)
         {
             InitializeComponent();
+            uid = id;
         }
     }
 }

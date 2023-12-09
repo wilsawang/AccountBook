@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace AccountBook
 {
     public partial class Account : Form
     {
-        public Account()
+        static string uid;
+        public Account(string id)
         {
             InitializeComponent();
+            uid = id;
         }
     }
 }
