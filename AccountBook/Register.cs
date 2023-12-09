@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -78,14 +79,14 @@ namespace AccountBook
             else
             {
                 bool t = validCode.CheckCode(txt_code.Text);
-                /*if (t)
+                if (t)
                 {
                     string connectionString = System.Configuration.ConfigurationManager.AppSettings["connectionString"];
                     SqlConnection con = new SqlConnection(connectionString);
                     try
                     {
                         con.Open();
-                        string sql = "select count(*) from user where id = '" + uid + "'";
+                        string sql = "select count(*) from users where uid = '" + uid + "'";
                         SqlCommand com = new SqlCommand(sql, con);
                         //>0表示有数据
                         if (Convert.ToInt32(com.ExecuteScalar()) > 0)
@@ -100,8 +101,8 @@ namespace AccountBook
                         }
                         else
                         {
-                            string sql = "insert into user values('" + uid + "','" + password + "')";
-                            if (login.ExecuteSql(sql) > 0)
+                            string s = "insert into users values('" + uid + "','" + password + "')";
+                            if (AccountBook.ExecuteSql(s) > 0)
                             {
                                 MessageBox.Show("注册成功！");
                             }
@@ -123,7 +124,7 @@ namespace AccountBook
                     txt_code.Text = "验证码不区分大小写";
                     txt_code.ForeColor = Color.Gray;
                     txt_code.Font = new Font("华文楷体", 9F);
-                }*/
+                }
             }
         }
         private void btn_change_psd(object sender, EventArgs e)

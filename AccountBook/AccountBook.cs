@@ -45,11 +45,42 @@ namespace AccountBook
             }
         }
 
+        // 连接数据库 执行
+        public static int ExecuteSql(string sql)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(sql, con);
+            try
+            {
+                con.Open();
+                int rows = cmd.ExecuteNonQuery();
+                return rows;
+            }
+            catch (SqlException e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                cmd.Dispose();
+                con.Close();
+            }
+        }
 
         private void submit_Click(object sender, EventArgs e)
         {
             string uid = uidbox.Text.Trim();
             string upwd = upwdbox.Text.Trim();
+            if (uid.Length == 0)
+            {
+                MessageBox.Show("请输入用户名!");
+                return;
+            }
+            if (upwd.Length == 0)
+            {
+                MessageBox.Show("请输入密码!");
+                return;
+            }
             string sql = "select * from users where uid='" + uid + "'and upwd='" + upwd + "'";
             DataTable dt = new DataTable();
             dt = AccountBook.Query(sql).Tables[0];
@@ -60,7 +91,7 @@ namespace AccountBook
             }
             else
             {
-                MessageBox.Show("No!");
+                MessageBox.Show("用户名或密码输入错误!");
                 return;
             }
         }

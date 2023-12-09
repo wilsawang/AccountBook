@@ -82,6 +82,7 @@
             this.upwdbox.Name = "upwdbox";
             this.upwdbox.Size = new System.Drawing.Size(231, 31);
             this.upwdbox.TabIndex = 4;
+            this.upwdbox.UseSystemPasswordChar = true;
             // 
             // label4
             // 
