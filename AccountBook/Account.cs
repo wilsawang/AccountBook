@@ -40,6 +40,12 @@ namespace AccountBook
             subsortbox_change(sort);
         }
 
+        private void outsortbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string sort = outsortbox.SelectedItem.ToString();
+            outsubsortbox_change(sort);
+        }
+
         // 第一个分类选中 影响第二个分类 收入
         private void subsortbox_change(string sort)
         {
@@ -84,6 +90,70 @@ namespace AccountBook
                 subsortbox.Items.Add("--请选择--");
                 subsortbox.Items.Add("其他");
                 subsortbox.SelectedIndex = 0;
+            }
+        }
+
+        private void outsubsortbox_change(string sort)
+        {
+            if (sort == "--请选择--")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.SelectedIndex = 0;
+            }
+            else if (sort == "衣")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.Items.Add("服饰");
+                outsubsortbox.Items.Add("鞋款");
+                outsubsortbox.Items.Add("耳饰");
+                outsubsortbox.Items.Add("帽类");
+                outsubsortbox.Items.Add("眼镜");
+                outsubsortbox.SelectedIndex = 0;
+            }
+            else if (sort == "食")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.Items.Add("堂食");
+                outsubsortbox.Items.Add("外卖");
+                outsubsortbox.Items.Add("聚餐");
+                outsubsortbox.Items.Add("水果");
+                outsubsortbox.Items.Add("零食");
+                outsubsortbox.Items.Add("饮品");
+                outsubsortbox.SelectedIndex = 0;
+            }
+            else if (sort == "住")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.Items.Add("住宿");
+                outsubsortbox.Items.Add("租房");
+                outsubsortbox.Items.Add("酒店");
+                outsubsortbox.Items.Add("民宿");
+                outsubsortbox.SelectedIndex = 0;
+            }
+            else if (sort == "行")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.Items.Add("自行车");
+                outsubsortbox.Items.Add("电动车");
+                outsubsortbox.Items.Add("的士");
+                outsubsortbox.Items.Add("地铁");
+                outsubsortbox.Items.Add("火车");
+                outsubsortbox.Items.Add("动车");
+                outsubsortbox.Items.Add("飞机");
+                outsubsortbox.Items.Add("轮渡");
+                outsubsortbox.SelectedIndex = 0;
+            }
+            else if (sort == "其他")
+            {
+                outsubsortbox.Items.Clear();
+                outsubsortbox.Items.Add("--请选择--");
+                outsubsortbox.Items.Add("其他");
+                outsubsortbox.SelectedIndex = 0;
             }
         }
 
@@ -190,5 +260,40 @@ namespace AccountBook
             }
         }
 
+        private void outbtn_Click(object sender, EventArgs e)
+        {
+            // 检查输入是否完整
+            // date
+            string date = outdatetime.Value.ToString("d");
+
+            // sort subsort
+            string sort = outsortbox.SelectedItem.ToString();
+            string subsort = outsubsortbox.SelectedItem.ToString();
+            if (sort == "--请选择--" || subsort == "--请选择--")
+            {
+                MessageBox.Show("请完成分类选择!");
+                return;
+            }
+
+            // money
+            decimal money;
+            money = Decimal.Round(Decimal.Parse(outmoney.Text.Trim()), 2);
+            if (money == 0)
+            {
+                MessageBox.Show("金额不能为零!");
+                return;
+            }
+            // 写入数据库 
+            string sql = "insert into disburse values('" + uid + "','" + date + "','" + sort + "','" + subsort + "','" + money.ToString() + "')";
+            if (AccountBook.ExecuteSql(sql) > 0)
+            {
+                MessageBox.Show("记录支出成功!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("记录支出失败!");
+            }
+        }
     }
 }
