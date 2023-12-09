@@ -86,8 +86,9 @@ namespace AccountBook
             dt = AccountBook.Query(sql).Tables[0];
             if(dt.Rows.Count > 0)
             {
-                MessageBox.Show("Yes!");
-                return;
+                Mainwindow main = new Mainwindow();
+                main.Show();
+                this.Hide();
             }
             else
             {
