@@ -33,6 +33,7 @@
             this.btn_analyze = new System.Windows.Forms.Button();
             this.btn_statistics = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.welcome_str = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_account
@@ -90,11 +91,22 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // welcome_str
+            // 
+            this.welcome_str.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.welcome_str.Location = new System.Drawing.Point(197, 54);
+            this.welcome_str.Name = "welcome_str";
+            this.welcome_str.ReadOnly = true;
+            this.welcome_str.Size = new System.Drawing.Size(393, 39);
+            this.welcome_str.TabIndex = 5;
+            this.welcome_str.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 444);
+            this.Controls.Add(this.welcome_str);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_statistics);
             this.Controls.Add(this.btn_analyze);
@@ -104,6 +116,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mainwindow";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -114,5 +127,6 @@
         private System.Windows.Forms.Button btn_analyze;
         private System.Windows.Forms.Button btn_statistics;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.TextBox welcome_str;
     }
 }

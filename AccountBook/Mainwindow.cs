@@ -17,12 +17,13 @@ namespace AccountBook
         {
             InitializeComponent();
             uid = id;
+            welcome_str.Text = "欢迎您, " + uid + "用户!";
         }
 
         // 退出登录
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            AccountBook ab= new AccountBook();
+            AccountBook ab = new AccountBook();
             ab.Show();
             this.Hide();
         }
