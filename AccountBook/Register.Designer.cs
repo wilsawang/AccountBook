@@ -67,7 +67,7 @@ namespace AccountBook
             this.return_1.TabStop = false;
             this.return_1.Text = "返回";
             this.return_1.UseVisualStyleBackColor = true;
-            this.return_1.Click += new System.EventHandler(this.btn_back_click);
+            this.return_1.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // login
             // 
@@ -79,7 +79,7 @@ namespace AccountBook
             this.login.TabStop = false;
             this.login.Text = "注册";
             this.login.UseVisualStyleBackColor = true;
-            this.login.Click += new System.EventHandler(this.btn_click);
+            this.login.Click += new System.EventHandler(this.btn_Click);
             // 
             // txt_code
             // 
@@ -89,8 +89,8 @@ namespace AccountBook
             this.txt_code.Size = new System.Drawing.Size(255, 50);
             this.txt_code.TabIndex = 27;
             this.txt_code.TabStop = false;
-            this.txt_code.GotFocus += new System.EventHandler(this.code_gotfocus);
-            this.txt_code.LostFocus += new System.EventHandler(this.code_lostfocus);
+            this.txt_code.GotFocus += new System.EventHandler(this.code_GotFocus);
+            this.txt_code.LostFocus += new System.EventHandler(this.code_LostFocus);
             // 
             // code_label
             // 
@@ -185,7 +185,7 @@ namespace AccountBook
             this.checkBox.TabIndex = 33;
             this.checkBox.Text = "显示密码";
             this.checkBox.UseVisualStyleBackColor = true;
-            this.checkBox.CheckedChanged += new System.EventHandler(this.btn_change_psd);
+            this.checkBox.CheckedChanged += new System.EventHandler(this.btn_Changepsd);
             // 
             // label1
             // 
@@ -232,7 +232,7 @@ namespace AccountBook
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "注册";
-            this.Load += new System.EventHandler(this.login_Register_Load);
+            this.Load += new System.EventHandler(this.Register_Load);
             ((System.ComponentModel.ISupportInitialize)(this.code_pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

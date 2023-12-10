@@ -71,6 +71,12 @@
     <Compile Include="Chgpwd.Designer.cs">
       <DependentUpon>Chgpwd.cs</DependentUpon>
     </Compile>
+    <Compile Include="query_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query_list.Designer.cs">
+      <DependentUpon>query_list.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mainwindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Chgpwd.resx">
       <DependentUpon>Chgpwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query_list.resx">
+      <DependentUpon>query_list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainwindow.resx">
       <DependentUpon>Mainwindow.cs</DependentUpon>

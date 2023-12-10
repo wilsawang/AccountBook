@@ -20,7 +20,7 @@ namespace AccountBook
             _AccountBook = accountBook;
         }
 
-        private void login_Register_Load(object sender, EventArgs e)
+        private void Register_Load(object sender, EventArgs e)
         {
             strTemp = validCode.UpdateVerifyCode();
             code_pic.Image = validCode.CreateImage(strTemp);
@@ -32,13 +32,13 @@ namespace AccountBook
         valid_code validCode = new valid_code();
         string strTemp = "";
         //点击按钮，返回登录主页面
-        private void btn_back_click(object sender, EventArgs e)
+        private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
             _AccountBook.Show();
         }
         //点击按钮，注册，并返回登录页面
-        private void btn_click(object sender, EventArgs e)
+        private void btn_Click(object sender, EventArgs e)
         {
             string uid = txt_uid.Text.Trim();
             string password = txt_upwd.Text.Trim();
@@ -116,7 +116,7 @@ namespace AccountBook
                 }
             }
         }
-        private void btn_change_psd(object sender, EventArgs e)
+        private void btn_Changepsd(object sender, EventArgs e)
         {
             if(checkBox.Checked)
             {
@@ -138,7 +138,7 @@ namespace AccountBook
             code_pic.Image = validCode.CreateImage(strTemp);
         }
         //失去焦点，判断是否有输入调整提示语句、字体及颜色
-        private void code_lostfocus(object sender, EventArgs e)
+        private void code_LostFocus(object sender, EventArgs e)
         {
             if (txt_code.Text == "")
             {
@@ -153,7 +153,7 @@ namespace AccountBook
             }
         }
         //获得焦点，若为提示信息则将格式调整为输入格式
-        private void code_gotfocus(object sender, EventArgs e)
+        private void code_GotFocus(object sender, EventArgs e)
         {
             if (txt_code.Text.StartsWith("验"))
             {

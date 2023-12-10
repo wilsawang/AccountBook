@@ -31,7 +31,7 @@ namespace AccountBook
             try
             {
                 con.Open();
-                sda.Fill(ds);
+                sda.Fill(ds, "atable");
                 return ds;
             }
             catch (SqlException e)
