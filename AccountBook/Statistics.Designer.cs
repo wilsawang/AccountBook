@@ -31,13 +31,14 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.monthCalendar = new System.Windows.Forms.MonthCalendar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.end_picker = new System.Windows.Forms.DateTimePicker();
+            this.start_picker = new System.Windows.Forms.DateTimePicker();
             this.txt_length = new System.Windows.Forms.TextBox();
             this.length_label = new System.Windows.Forms.Label();
             this.end_label = new System.Windows.Forms.Label();
             this.start_label = new System.Windows.Forms.Label();
             this.query = new System.Windows.Forms.Button();
-            this.start_picker = new System.Windows.Forms.DateTimePicker();
-            this.end_picker = new System.Windows.Forms.DateTimePicker();
+            this.back = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +80,28 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "详细信息";
             // 
+            // end_picker
+            // 
+            this.end_picker.CustomFormat = "yyyy-MM-dd";
+            this.end_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.end_picker.Location = new System.Drawing.Point(195, 115);
+            this.end_picker.Name = "end_picker";
+            this.end_picker.Size = new System.Drawing.Size(294, 50);
+            this.end_picker.TabIndex = 7;
+            this.end_picker.Value = new System.DateTime(2023, 12, 10, 0, 0, 0, 0);
+            this.end_picker.ValueChanged += new System.EventHandler(this.end_text_Changed);
+            // 
+            // start_picker
+            // 
+            this.start_picker.CustomFormat = "yyyy-MM-dd";
+            this.start_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.start_picker.Location = new System.Drawing.Point(195, 37);
+            this.start_picker.Name = "start_picker";
+            this.start_picker.Size = new System.Drawing.Size(294, 50);
+            this.start_picker.TabIndex = 6;
+            this.start_picker.Value = new System.DateTime(2023, 12, 10, 0, 0, 0, 0);
+            this.start_picker.ValueChanged += new System.EventHandler(this.start_text_Changed);
+            // 
             // txt_length
             // 
             this.txt_length.Location = new System.Drawing.Point(195, 199);
@@ -117,7 +140,7 @@
             // query
             // 
             this.query.Font = new System.Drawing.Font("宋体", 14F);
-            this.query.Location = new System.Drawing.Point(671, 366);
+            this.query.Location = new System.Drawing.Point(594, 367);
             this.query.Name = "query";
             this.query.Size = new System.Drawing.Size(146, 68);
             this.query.TabIndex = 2;
@@ -125,33 +148,23 @@
             this.query.UseVisualStyleBackColor = true;
             this.query.Click += new System.EventHandler(this.btn_query_Click);
             // 
-            // start_picker
+            // back
             // 
-            this.start_picker.CustomFormat = "yyyy-MM-dd";
-            this.start_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.start_picker.Location = new System.Drawing.Point(195, 37);
-            this.start_picker.Name = "start_picker";
-            this.start_picker.Size = new System.Drawing.Size(294, 50);
-            this.start_picker.TabIndex = 6;
-            this.start_picker.Value = new System.DateTime(2023, 12, 10, 0, 0, 0, 0);
-            this.start_picker.CloseUp += new System.EventHandler(this.start_text_Changed);
-            // 
-            // end_picker
-            // 
-            this.end_picker.CustomFormat = "yyyy-MM-dd";
-            this.end_picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.end_picker.Location = new System.Drawing.Point(195, 115);
-            this.end_picker.Name = "end_picker";
-            this.end_picker.Size = new System.Drawing.Size(294, 50);
-            this.end_picker.TabIndex = 7;
-            this.end_picker.Value = new System.DateTime(2023, 12, 10, 0, 0, 0, 0);
-            this.end_picker.CloseUp += new System.EventHandler(this.end_text_Changed);
+            this.back.Font = new System.Drawing.Font("宋体", 14F);
+            this.back.Location = new System.Drawing.Point(805, 367);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(146, 68);
+            this.back.TabIndex = 3;
+            this.back.Text = "返回";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 592);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.query);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -179,5 +192,6 @@
         private System.Windows.Forms.Button query;
         private System.Windows.Forms.DateTimePicker end_picker;
         private System.Windows.Forms.DateTimePicker start_picker;
+        private System.Windows.Forms.Button back;
     }
 }

@@ -13,20 +13,18 @@ namespace AccountBook
 {
     public partial class Chgpwd : Form
     {
-        Mainwindow _mainwindow;
-        public Chgpwd(Mainwindow mainwindow,string id, string pwd)
+        public Chgpwd(string id)
         {
             InitializeComponent();
-            _mainwindow = mainwindow;
             txt_uid.Text = id;
-            txt_pre_pwd.Text = pwd;
+            DataSet ds = AccountBook.Query("select upwd from users where uid = '" + id + "'");
+            txt_pre_pwd.Text = ds.Tables[0].Rows[0][0].ToString();
         }
 
         //返回个人信息页
         private void btn_back_click(object sender, EventArgs e)
         {
             this.Close();
-            _mainwindow.Show();
         }
         //修改密码，确定修改，返回登录页面重新登陆
         private void btn_confirm_click(object sender, EventArgs e)
@@ -52,7 +50,6 @@ namespace AccountBook
                     {
                         MessageBox.Show("修改成功");
                         this.Close();
-                        _mainwindow.Show();
                     }
                     else
                     {

@@ -86,7 +86,7 @@ namespace AccountBook
             dt = AccountBook.Query(sql).Tables[0];
             if(dt.Rows.Count > 0)
             {
-                Mainwindow main = new Mainwindow(uid, upwd);
+                Mainwindow main = new Mainwindow(uid);
                 main.Show();
                 this.Hide();
             }
