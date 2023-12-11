@@ -13,11 +13,9 @@ namespace AccountBook
     public partial class Statistics : Form
     {
         static string uid;
-        Mainwindow _mainwindow;
-        public Statistics(Mainwindow mainwindow , string id)
+        public Statistics(string id)
         {
             InitializeComponent();
-            _mainwindow = mainwindow;
             uid = id;
         }
         //初始化
@@ -59,7 +57,6 @@ namespace AccountBook
         private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
-            _mainwindow.Show();
         }
     }
 }

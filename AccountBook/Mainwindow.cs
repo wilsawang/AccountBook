@@ -45,7 +45,7 @@ namespace AccountBook
         // 进入统计页面 
         private void btn_statistics_Click(object sender, EventArgs e)
         {
-            Statistics s = new Statistics(this, uid);
+            Statistics s = new Statistics(uid);
             s.ShowDialog();
         }
 
