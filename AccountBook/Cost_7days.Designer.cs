@@ -89,6 +89,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.chart1);
             this.Name = "Cost_7days";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "七日支出";
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

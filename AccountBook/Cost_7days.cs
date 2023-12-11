@@ -67,5 +67,6 @@ namespace AccountBook
             DateTime startd = dateTimePicker1.Value;
             date_7days(startd);
         }
+
     }
 }

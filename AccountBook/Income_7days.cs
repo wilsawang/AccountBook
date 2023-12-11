@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,7 +33,7 @@ namespace AccountBook
             string startd = startday.Year.ToString() + '-' + startday.Month.ToString() + '-' + startday.Day.ToString();
 
             // 从数据库获取数据
-            string sql = "select date as date , sum(money) from income " +
+            string sql = "select date as date , sum(money) from disburse " +
                 "where uid = '" + uid + "' and date between '" + startd + "' and '" + endd + "'group by date";
             DataSet ds = AccountBook.Query(sql);
 
@@ -61,7 +62,6 @@ namespace AccountBook
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            // 日期改变
             DateTime startd = dateTimePicker1.Value;
             date_7days(startd);
         }

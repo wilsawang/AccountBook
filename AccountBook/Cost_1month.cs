@@ -33,7 +33,7 @@ namespace AccountBook
             string startd = startday.Year.ToString() + '-' + startday.Month.ToString() + '-' + startday.Day.ToString();
 
             // 数据库查询
-            // 该用户在一个月中的收入中各个部分的金额
+            // 该用户在一个月中的支出中各个部分的金额
             string sql = "select sort, sum(money) from disburse " +
                 "where uid = '" + uid + "' and date between '" + startd + "' and '" + endd + "' group by sort";
             DataSet ds = AccountBook.Query(sql);
@@ -48,10 +48,22 @@ namespace AccountBook
                 result[ds.Tables[0].Rows[i][0].ToString()] = a;
             }
 
-            // 设置饼图样式
-            pie.Series["Series1"]["PieLineColor"] = "Black";        //连线颜色
-            pie.Series["Series1"]["PieLabelStyle"] = "Outside";     //标签位置
-            // 绘制饼图（添加数据）
+            
+            if (result.Count() > 0)
+            {
+                // 若该时间范围内有支出，则标签显示在饼图外部
+                pie.Series["Series1"].Label = "#VALX:#PERCENT";
+                pie.Series["Series1"]["PieLineColor"] = "Black";        //连线颜色
+                pie.Series["Series1"]["PieLabelStyle"] = "Outside";     //标签位置                                                                                     
+            }
+            else
+            {
+                // 否则在图中显示暂无支出数据
+                pie.Series["Series1"].Label = "#VALX";
+                pie.Series["Series1"]["PieLabelStyle"] = "Inside";
+                result.Add("暂无支出数据", 1);
+                
+            }
             pie.Series["Series1"].Points.DataBindXY(result.Keys.ToArray(), result.Values.ToArray());
         }
 

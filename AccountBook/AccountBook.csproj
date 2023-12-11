@@ -72,22 +72,11 @@
     <Compile Include="Chgpwd.Designer.cs">
       <DependentUpon>Chgpwd.cs</DependentUpon>
     </Compile>
-    <Compile Include="query_list.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="query_list.Designer.cs">
-      <DependentUpon>query_list.cs</DependentUpon>
     <Compile Include="Cost_1month.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cost_1month.Designer.cs">
       <DependentUpon>Cost_1month.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cost_7days.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cost_7days.Designer.cs">
-      <DependentUpon>Cost_7days.cs</DependentUpon>
     </Compile>
     <Compile Include="Income_1month.cs">
       <SubType>Form</SubType>
@@ -100,6 +89,18 @@
     </Compile>
     <Compile Include="Income_7days.Designer.cs">
       <DependentUpon>Income_7days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="query_list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query_list.Designer.cs">
+      <DependentUpon>query_list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cost_7days.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cost_7days.Designer.cs">
+      <DependentUpon>Cost_7days.cs</DependentUpon>
     </Compile>
     <Compile Include="Mainwindow.cs">
       <SubType>Form</SubType>
@@ -134,19 +135,20 @@
     <EmbeddedResource Include="Chgpwd.resx">
       <DependentUpon>Chgpwd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="query_list.resx">
-      <DependentUpon>query_list.cs</DependentUpon>
     <EmbeddedResource Include="Cost_1month.resx">
       <DependentUpon>Cost_1month.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cost_7days.resx">
-      <DependentUpon>Cost_7days.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Income_1month.resx">
       <DependentUpon>Income_1month.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Income_7days.resx">
       <DependentUpon>Income_7days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query_list.resx">
+      <DependentUpon>query_list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cost_7days.resx">
+      <DependentUpon>Cost_7days.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainwindow.resx">
       <DependentUpon>Mainwindow.cs</DependentUpon>

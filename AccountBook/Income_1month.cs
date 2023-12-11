@@ -21,12 +21,9 @@ namespace AccountBook
             // 默认起始计算时间为：当天的前30天
             DateTime startday = DateTime.Now.AddDays(-29);
             dateTimePicker1.Value = startday;
-
             date_month(startday);
-
         }
 
-        // 该处的一个月指的是30天
         private void date_month(DateTime startday)
         {
             // 起始日期和结束日期
@@ -50,12 +47,25 @@ namespace AccountBook
                 result[ds.Tables[0].Rows[i][0].ToString()] = a;
             }
 
-            // 设置饼图样式
-            pie.Series["Series1"]["PieLineColor"] = "Black";        //连线颜色
-            pie.Series["Series1"]["PieLabelStyle"] = "Outside";     //标签位置
-            // 绘制饼图（添加数据）
+
+            if (result.Count() > 0)
+            {
+                // 若该时间范围内有支出，则标签显示在饼图外部
+                pie.Series["Series1"].Label = "#VALX:#PERCENT";
+                pie.Series["Series1"]["PieLineColor"] = "Black";        //连线颜色
+                pie.Series["Series1"]["PieLabelStyle"] = "Outside";     //标签位置                                                                                     
+            }
+            else
+            {
+                // 否则在图中显示暂无支出数据
+                pie.Series["Series1"].Label = "#VALX";
+                pie.Series["Series1"]["PieLabelStyle"] = "Inside";
+                result.Add("暂无收入数据", 1);
+
+            }
             pie.Series["Series1"].Points.DataBindXY(result.Keys.ToArray(), result.Values.ToArray());
         }
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             DateTime startd = dateTimePicker1.Value;

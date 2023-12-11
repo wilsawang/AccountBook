@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.pie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -39,45 +39,48 @@
             // 
             // pie
             // 
-            chartArea1.Name = "ChartArea1";
-            this.pie.ChartAreas.Add(chartArea1);
-            legend1.Enabled = false;
-            legend1.Name = "Legend1";
-            this.pie.Legends.Add(legend1);
-            this.pie.Location = new System.Drawing.Point(-2, 45);
+            chartArea3.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea3.AxisX2.LineColor = System.Drawing.Color.Gray;
+            chartArea3.AxisX2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.DashDotDot;
+            chartArea3.AxisY2.LineColor = System.Drawing.Color.Gray;
+            chartArea3.AxisY2.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea3.Name = "ChartArea1";
+            this.pie.ChartAreas.Add(chartArea3);
+            this.pie.Location = new System.Drawing.Point(-3, 45);
             this.pie.Name = "pie";
             this.pie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Label = "#VALX:#PERCENT";
-            series1.Legend = "Legend1";
-            series1.LegendText = "#VALX";
-            series1.Name = "Series1";
-            series1.ToolTip = "#TOTAL";
-            this.pie.Series.Add(series1);
-            this.pie.Size = new System.Drawing.Size(697, 325);
-            this.pie.TabIndex = 1;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.IsValueShownAsLabel = true;
+            series3.Label = "#VALX:#PERCENT";
+            series3.Name = "Series1";
+            series3.ToolTip = "#VALY";
+            this.pie.Series.Add(series3);
+            this.pie.Size = new System.Drawing.Size(699, 324);
+            this.pie.TabIndex = 7;
             this.pie.Text = "chart1";
+            title3.Name = "Title1";
+            this.pie.Titles.Add(title3);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Window;
             this.label1.Font = new System.Drawing.Font("宋体", 12F);
-            this.label1.Location = new System.Drawing.Point(320, 15);
+            this.label1.Location = new System.Drawing.Point(318, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 20);
-            this.label1.TabIndex = 4;
+            this.label1.TabIndex = 10;
             this.label1.Text = "起始日期选择：";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("宋体", 12F);
             this.dateTimePicker1.Font = new System.Drawing.Font("宋体", 12F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(482, 9);
+            this.dateTimePicker1.Location = new System.Drawing.Point(480, 9);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.TabIndex = 9;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Income_1month
@@ -90,6 +93,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pie);
             this.Name = "Income_1month";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "一月收入";
             ((System.ComponentModel.ISupportInitialize)(this.pie)).EndInit();
             this.ResumeLayout(false);
