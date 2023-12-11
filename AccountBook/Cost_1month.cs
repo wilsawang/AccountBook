@@ -67,7 +67,7 @@ namespace AccountBook
             pie.Series["Series1"].Points.DataBindXY(result.Keys.ToArray(), result.Values.ToArray());
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void dateTimePicker1_ValueChanged_1(object sender, EventArgs e)
         {
             DateTime startd = dateTimePicker1.Value;
             date_month(startd);
