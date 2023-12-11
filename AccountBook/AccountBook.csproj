@@ -90,11 +90,11 @@
     <Compile Include="Income_7days.Designer.cs">
       <DependentUpon>Income_7days.cs</DependentUpon>
     </Compile>
-    <Compile Include="query_list.cs">
+    <Compile Include="Query_list.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="query_list.Designer.cs">
-      <DependentUpon>query_list.cs</DependentUpon>
+    <Compile Include="Query_list.Designer.cs">
+      <DependentUpon>Query_list.cs</DependentUpon>
     </Compile>
     <Compile Include="Cost_7days.cs">
       <SubType>Form</SubType>
@@ -144,8 +144,8 @@
     <EmbeddedResource Include="Income_7days.resx">
       <DependentUpon>Income_7days.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="query_list.resx">
-      <DependentUpon>query_list.cs</DependentUpon>
+    <EmbeddedResource Include="Query_list.resx">
+      <DependentUpon>Query_list.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cost_7days.resx">
       <DependentUpon>Cost_7days.cs</DependentUpon>

@@ -22,12 +22,12 @@ namespace AccountBook
         }
 
         //返回个人信息页
-        private void btn_back_click(object sender, EventArgs e)
+        private void btn_back_Click(object sender, EventArgs e)
         {
             this.Close();
         }
         //修改密码，确定修改，返回登录页面重新登陆
-        private void btn_confirm_click(object sender, EventArgs e)
+        private void btn_confirm_Click(object sender, EventArgs e)
         {
             string uid = txt_uid.Text.Trim();
             string new_pwd = txt_new_pwd.Text.Trim();

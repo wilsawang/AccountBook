@@ -50,7 +50,7 @@ namespace AccountBook
         {
             string start = start_picker.Value.ToString("d");
             string end = end_picker.Value.ToString("d");
-            query_list childrenForm = new query_list(start, end, uid);
+            Query_list childrenForm = new Query_list(start, end, uid);
             childrenForm.ShowDialog();
         }
         //返回上一页面

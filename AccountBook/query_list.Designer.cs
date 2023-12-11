@@ -1,7 +1,7 @@
 ﻿
 namespace AccountBook
 {
-    partial class query_list
+    partial class Query_list
     {
         /// <summary>
         /// Required designer variable.

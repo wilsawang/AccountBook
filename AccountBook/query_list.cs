@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace AccountBook
 {
-    public partial class query_list : Form
+    public partial class Query_list : Form
     {
         private static string uid, _start, _end;
 
-        public query_list(string start, string end, string id)
+        public Query_list(string start, string end, string id)
         {
             InitializeComponent();
             uid = id;

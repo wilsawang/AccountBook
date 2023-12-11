@@ -51,7 +51,7 @@
             this.back.TabStop = false;
             this.back.Text = "返回";
             this.back.UseVisualStyleBackColor = true;
-            this.back.Click += new System.EventHandler(this.btn_back_click);
+            this.back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // txt_pre_pwd
             // 
@@ -84,7 +84,7 @@
             this.confirm.TabStop = false;
             this.confirm.Text = "确认";
             this.confirm.UseVisualStyleBackColor = true;
-            this.confirm.Click += new System.EventHandler(this.btn_confirm_click);
+            this.confirm.Click += new System.EventHandler(this.btn_confirm_Click);
             // 
             // txt_pwd_confirm
             // 
