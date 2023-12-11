@@ -30,6 +30,7 @@ namespace AccountBook
             income_box2.SelectedIndex = 0;
         }
 
+        //支出大类更改则修改小类选择框中的值
         private void expenbox_SelectedChanged(object sender, EventArgs e)
         {
             string sort;
@@ -96,6 +97,7 @@ namespace AccountBook
             }
         }
 
+        //收入大类修改则更改小类选择框中的值
         private void incomebox_SelectedChanged(object sender, EventArgs e)
         {
             string sort;
@@ -144,6 +146,7 @@ namespace AccountBook
             }
         }
 
+        //查找支出账单并展示
         private void btn_expen_Query(object sender, EventArgs e)
         {
             string sort = expen_box1.SelectedItem.ToString();
@@ -166,6 +169,7 @@ namespace AccountBook
             }
         }
 
+        //查找收入账单并展示
         private void btn_income_Query(object sender, EventArgs e)
         {
             string sort = income_box1.SelectedItem.ToString();
