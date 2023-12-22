@@ -55,5 +55,12 @@ namespace AccountBook
             Analyze a = new Analyze(uid);
             a.ShowDialog();
         }
+
+        // 进入年度总结报告页面
+        private void annual_report_Click(object sender, EventArgs e)
+        {
+            Annual annual = new Annual(uid);
+            annual.ShowDialog();
+        }
     }
 }

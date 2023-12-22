@@ -66,6 +66,12 @@
     <Compile Include="Analyze.Designer.cs">
       <DependentUpon>Analyze.cs</DependentUpon>
     </Compile>
+    <Compile Include="Annual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual.Designer.cs">
+      <DependentUpon>Annual.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chgpwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="Analyze.resx">
       <DependentUpon>Analyze.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Annual.resx">
+      <DependentUpon>Annual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Chgpwd.resx">
       <DependentUpon>Chgpwd.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +170,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -180,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savingpot.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

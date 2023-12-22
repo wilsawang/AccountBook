@@ -34,6 +34,7 @@
             this.btn_statistics = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.welcome_str = new System.Windows.Forms.TextBox();
+            this.annual_report = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_account
@@ -101,17 +102,31 @@
             this.welcome_str.TabIndex = 5;
             this.welcome_str.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // annual_report
+            // 
+            this.annual_report.AutoSize = true;
+            this.annual_report.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.annual_report.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.annual_report.Location = new System.Drawing.Point(308, 394);
+            this.annual_report.Name = "annual_report";
+            this.annual_report.Size = new System.Drawing.Size(178, 21);
+            this.annual_report.TabIndex = 6;
+            this.annual_report.Text = "点击生成年度报告";
+            this.annual_report.Click += new System.EventHandler(this.annual_report_Click);
+            // 
             // Mainwindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 444);
+            this.Controls.Add(this.annual_report);
             this.Controls.Add(this.welcome_str);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_statistics);
             this.Controls.Add(this.btn_analyze);
             this.Controls.Add(this.btn_chgpwd);
             this.Controls.Add(this.btn_account);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Mainwindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mainwindow";
@@ -128,5 +143,6 @@
         private System.Windows.Forms.Button btn_statistics;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.TextBox welcome_str;
+        private System.Windows.Forms.Label annual_report;
     }
 }
