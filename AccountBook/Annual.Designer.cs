@@ -28,154 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox13;
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.y5 = new System.Windows.Forms.PictureBox();
+            this.y4 = new System.Windows.Forms.PictureBox();
+            this.y3 = new System.Windows.Forms.PictureBox();
+            this.y2 = new System.Windows.Forms.PictureBox();
+            this.y1 = new System.Windows.Forms.PictureBox();
+            this.y11 = new System.Windows.Forms.PictureBox();
+            this.y10 = new System.Windows.Forms.PictureBox();
+            this.y9 = new System.Windows.Forms.PictureBox();
+            this.y8 = new System.Windows.Forms.PictureBox();
+            this.y7 = new System.Windows.Forms.PictureBox();
+            this.y12 = new System.Windows.Forms.PictureBox();
+            this.y6 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             pictureBox13 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox12.Location = new System.Drawing.Point(684, 269);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 11;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox11.Location = new System.Drawing.Point(557, 200);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 10;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox10.Location = new System.Drawing.Point(430, 131);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox9.Location = new System.Drawing.Point(303, 200);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox8.Location = new System.Drawing.Point(176, 269);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 7;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox7.Location = new System.Drawing.Point(684, 140);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 6;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox6.Location = new System.Drawing.Point(557, 71);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox5.Location = new System.Drawing.Point(430, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox4.Location = new System.Drawing.Point(303, 71);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox3.Location = new System.Drawing.Point(176, 140);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox2.Location = new System.Drawing.Point(811, 209);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AccountBook.Properties.Resources.purse;
-            this.pictureBox1.Location = new System.Drawing.Point(49, 209);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(121, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox13
             // 
@@ -187,57 +69,183 @@
             pictureBox13.TabIndex = 12;
             pictureBox13.TabStop = false;
             // 
+            // y5
+            // 
+            this.y5.Image = global::AccountBook.Properties.Resources.purse;
+            this.y5.Location = new System.Drawing.Point(684, 269);
+            this.y5.Name = "y5";
+            this.y5.Size = new System.Drawing.Size(121, 123);
+            this.y5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y5.TabIndex = 11;
+            this.y5.TabStop = false;
+            // 
+            // y4
+            // 
+            this.y4.Image = global::AccountBook.Properties.Resources.purse;
+            this.y4.Location = new System.Drawing.Point(557, 200);
+            this.y4.Name = "y4";
+            this.y4.Size = new System.Drawing.Size(121, 123);
+            this.y4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y4.TabIndex = 10;
+            this.y4.TabStop = false;
+            // 
+            // y3
+            // 
+            this.y3.Image = global::AccountBook.Properties.Resources.purse;
+            this.y3.Location = new System.Drawing.Point(430, 131);
+            this.y3.Name = "y3";
+            this.y3.Size = new System.Drawing.Size(121, 123);
+            this.y3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y3.TabIndex = 9;
+            this.y3.TabStop = false;
+            // 
+            // y2
+            // 
+            this.y2.Image = global::AccountBook.Properties.Resources.purse;
+            this.y2.Location = new System.Drawing.Point(303, 200);
+            this.y2.Name = "y2";
+            this.y2.Size = new System.Drawing.Size(121, 123);
+            this.y2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y2.TabIndex = 8;
+            this.y2.TabStop = false;
+            // 
+            // y1
+            // 
+            this.y1.Image = global::AccountBook.Properties.Resources.purse;
+            this.y1.Location = new System.Drawing.Point(176, 269);
+            this.y1.Name = "y1";
+            this.y1.Size = new System.Drawing.Size(121, 123);
+            this.y1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y1.TabIndex = 7;
+            this.y1.TabStop = false;
+            // 
+            // y11
+            // 
+            this.y11.Image = global::AccountBook.Properties.Resources.purse;
+            this.y11.Location = new System.Drawing.Point(684, 140);
+            this.y11.Name = "y11";
+            this.y11.Size = new System.Drawing.Size(121, 123);
+            this.y11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y11.TabIndex = 6;
+            this.y11.TabStop = false;
+            // 
+            // y10
+            // 
+            this.y10.Image = global::AccountBook.Properties.Resources.purse;
+            this.y10.Location = new System.Drawing.Point(557, 71);
+            this.y10.Name = "y10";
+            this.y10.Size = new System.Drawing.Size(121, 123);
+            this.y10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y10.TabIndex = 5;
+            this.y10.TabStop = false;
+            // 
+            // y9
+            // 
+            this.y9.Image = global::AccountBook.Properties.Resources.purse;
+            this.y9.Location = new System.Drawing.Point(430, 2);
+            this.y9.Name = "y9";
+            this.y9.Size = new System.Drawing.Size(121, 123);
+            this.y9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y9.TabIndex = 4;
+            this.y9.TabStop = false;
+            // 
+            // y8
+            // 
+            this.y8.Image = global::AccountBook.Properties.Resources.purse;
+            this.y8.Location = new System.Drawing.Point(303, 71);
+            this.y8.Name = "y8";
+            this.y8.Size = new System.Drawing.Size(121, 123);
+            this.y8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y8.TabIndex = 3;
+            this.y8.TabStop = false;
+            // 
+            // y7
+            // 
+            this.y7.Image = global::AccountBook.Properties.Resources.purse;
+            this.y7.Location = new System.Drawing.Point(176, 140);
+            this.y7.Name = "y7";
+            this.y7.Size = new System.Drawing.Size(121, 123);
+            this.y7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y7.TabIndex = 2;
+            this.y7.TabStop = false;
+            // 
+            // y12
+            // 
+            this.y12.Image = global::AccountBook.Properties.Resources.purse;
+            this.y12.Location = new System.Drawing.Point(811, 209);
+            this.y12.Name = "y12";
+            this.y12.Size = new System.Drawing.Size(121, 123);
+            this.y12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y12.TabIndex = 1;
+            this.y12.TabStop = false;
+            // 
+            // y6
+            // 
+            this.y6.Image = global::AccountBook.Properties.Resources.purse;
+            this.y6.Location = new System.Drawing.Point(49, 209);
+            this.y6.Name = "y6";
+            this.y6.Size = new System.Drawing.Size(121, 123);
+            this.y6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y6.TabIndex = 0;
+            this.y6.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Annual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 544);
             this.Controls.Add(pictureBox13);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.y5);
+            this.Controls.Add(this.y4);
+            this.Controls.Add(this.y3);
+            this.Controls.Add(this.y2);
+            this.Controls.Add(this.y1);
+            this.Controls.Add(this.y11);
+            this.Controls.Add(this.y10);
+            this.Controls.Add(this.y9);
+            this.Controls.Add(this.y8);
+            this.Controls.Add(this.y7);
+            this.Controls.Add(this.y12);
+            this.Controls.Add(this.y6);
             this.Name = "Annual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "年度总结报告";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.Annual_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y6)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox y6;
+        private System.Windows.Forms.PictureBox y12;
+        private System.Windows.Forms.PictureBox y7;
+        private System.Windows.Forms.PictureBox y8;
+        private System.Windows.Forms.PictureBox y9;
+        private System.Windows.Forms.PictureBox y10;
+        private System.Windows.Forms.PictureBox y11;
+        private System.Windows.Forms.PictureBox y1;
+        private System.Windows.Forms.PictureBox y2;
+        private System.Windows.Forms.PictureBox y3;
+        private System.Windows.Forms.PictureBox y4;
+        private System.Windows.Forms.PictureBox y5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
