@@ -53,3 +53,6 @@ insert into disburse values('ningxiu','2023-12-1','其他','其他',340);
 insert into disburse values('ningxiu','2023-12-12','食','堂食',7);
 
 select * from income where date>='2023-01-01' and date<='2023-12-31';
+select * from disburse where date>='2023-01-01' and date<='2023-12-31';
+
+select subsort,sum(money) from income where date>='2023-01-01' and date<='2023-12-31' group by subsort order by sum(money) desc;
