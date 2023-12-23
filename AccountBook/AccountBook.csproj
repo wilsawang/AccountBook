@@ -84,6 +84,12 @@
     <Compile Include="Cost_1month.Designer.cs">
       <DependentUpon>Cost_1month.cs</DependentUpon>
     </Compile>
+    <Compile Include="Expen_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expen_Update.Designer.cs">
+      <DependentUpon>Expen_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Income_1month.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,12 @@
     </Compile>
     <Compile Include="Income_7days.Designer.cs">
       <DependentUpon>Income_7days.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Income_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income_Update.Designer.cs">
+      <DependentUpon>Income_Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Query_list.cs">
       <SubType>Form</SubType>
@@ -147,11 +159,17 @@
     <EmbeddedResource Include="Cost_1month.resx">
       <DependentUpon>Cost_1month.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Expen_Update.resx">
+      <DependentUpon>Expen_Update.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Income_1month.resx">
       <DependentUpon>Income_1month.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Income_7days.resx">
       <DependentUpon>Income_7days.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income_Update.resx">
+      <DependentUpon>Income_Update.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Query_list.resx">
       <DependentUpon>Query_list.cs</DependentUpon>

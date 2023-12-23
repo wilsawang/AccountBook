@@ -191,5 +191,119 @@ namespace AccountBook
                 MessageBox.Show("您在选中日期内无本类别的收入记录喔！");
             }
         }
+
+        //跳转修改选中的支出账单
+        private void btn_expen_Update(object sender, EventArgs e)
+        {
+            if (expen_list.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("请选中您需修改的行！");
+            }
+            else if (expen_list.SelectedRows.Count == 1)
+            {
+                int a = expen_list.CurrentRow.Index;
+                string date = expen_list.Rows[a].Cells[1].Value.ToString().Trim();
+                string sort = expen_list.Rows[a].Cells[2].Value.ToString().Trim();
+                string subsort = expen_list.Rows[a].Cells[3].Value.ToString().Trim();
+                decimal money = Decimal.Round(Decimal.Parse(expen_list.Rows[a].Cells[4].Value.ToString().Trim()), 2);
+                Expen_Update childrenForm = new Expen_Update(uid, date, sort, subsort, money);
+                childrenForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("请仅选中需要修改的一行，暂不支持批量修改");
+            }
+        }
+
+        //跳转修改选中的收入账单
+        private void btn_income_Update(object sender, EventArgs e)
+        {
+            if (income_list.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("请选中您需修改的行！");
+            }
+            else if (income_list.SelectedRows.Count == 1)
+            {
+                int a = income_list.CurrentRow.Index;
+                string date = income_list.Rows[a].Cells[1].Value.ToString().Trim();
+                string sort = income_list.Rows[a].Cells[2].Value.ToString().Trim();
+                string subsort = income_list.Rows[a].Cells[3].Value.ToString().Trim();
+                decimal money = Decimal.Round(Decimal.Parse(income_list.Rows[a].Cells[4].Value.ToString().Trim()), 2);
+                Income_Update childrenForm = new Income_Update(uid, date, sort, subsort, money);
+                childrenForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("请仅选中需要修改的一行，暂不支持批量修改");
+            }
+        }
+
+        //点击按钮，删除支出信息
+        private void btn_Del_Expen(object sender, EventArgs e)
+        {
+            if (expen_list.SelectedRows.Count > 0)
+            {
+                bool flag = true;
+                var dataselect = expen_list.SelectedRows;
+                foreach (DataGridViewRow row in dataselect)
+                {
+                    string date = Convert.ToString(row.Cells["date"].Value);
+                    string sort = Convert.ToString(row.Cells["sort"].Value);
+                    string subsort = Convert.ToString(row.Cells["subsort"].Value);
+                    decimal money = Decimal.Round(Decimal.Parse(Convert.ToString(row.Cells["money"].Value)), 2);
+                    string sql = "delete from disburse where uid='" + uid + "'and date='" + date + "'and sort='" + sort + "'and subsort='" + subsort + "'and money=" + money + "";
+                    if (AccountBook.ExecuteSql(sql) == 0)
+                    {
+                        flag = false;
+                    }
+                }
+                if (flag)
+                {
+                    MessageBox.Show("删除成功！");
+                }
+                else
+                {
+                    MessageBox.Show("删除失败！");
+                }
+            }
+            else
+            {
+                MessageBox.Show("请选中您需删除的行！");
+            }
+        }
+
+        //点击按钮，删除收入信息
+        private void btn_Del_Income(object sender, EventArgs e)
+        {
+            if (income_list.SelectedRows.Count > 0)
+            {
+                bool flag = true;
+                var dataselect = income_list.SelectedRows;
+                foreach (DataGridViewRow row in dataselect)
+                {
+                    string date = Convert.ToString(row.Cells["date"].Value);
+                    string sort = Convert.ToString(row.Cells["sort"].Value);
+                    string subsort = Convert.ToString(row.Cells["subsort"].Value);
+                    decimal money = Decimal.Round(Decimal.Parse(Convert.ToString(row.Cells["money"].Value)), 2);
+                    string sql = "delete from income where uid='" + uid + "'and date='" + date + "'and sort='" + sort + "'and subsort='" + subsort + "'and money=" + money + "";
+                    if (AccountBook.ExecuteSql(sql) == 0)
+                    {
+                        flag = false;
+                    }
+                }
+                if (flag)
+                {
+                    MessageBox.Show("删除成功！");
+                }
+                else
+                {
+                    MessageBox.Show("删除失败！");
+                }
+            }
+            else
+            {
+                MessageBox.Show("请选中您需删除的行！");
+            }
+        }
     }
 }
