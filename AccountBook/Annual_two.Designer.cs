@@ -58,11 +58,13 @@
             // 
             // text11
             // 
+            this.text11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text11.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text11.Location = new System.Drawing.Point(35, 12);
+            this.text11.Location = new System.Drawing.Point(83, 27);
+            this.text11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text11.Name = "text11";
             this.text11.ReadOnly = true;
-            this.text11.Size = new System.Drawing.Size(286, 35);
+            this.text11.Size = new System.Drawing.Size(255, 23);
             this.text11.TabIndex = 0;
             this.text11.TabStop = false;
             this.text11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -70,11 +72,13 @@
             // 
             // text13
             // 
+            this.text13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text13.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text13.Location = new System.Drawing.Point(393, 12);
+            this.text13.Location = new System.Drawing.Point(401, 27);
+            this.text13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text13.Name = "text13";
             this.text13.ReadOnly = true;
-            this.text13.Size = new System.Drawing.Size(286, 35);
+            this.text13.Size = new System.Drawing.Size(255, 23);
             this.text13.TabIndex = 1;
             this.text13.TabStop = false;
             this.text13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -82,11 +86,13 @@
             // 
             // text12
             // 
+            this.text12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text12.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text12.Location = new System.Drawing.Point(35, 66);
+            this.text12.Location = new System.Drawing.Point(83, 72);
+            this.text12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text12.Name = "text12";
             this.text12.ReadOnly = true;
-            this.text12.Size = new System.Drawing.Size(286, 39);
+            this.text12.Size = new System.Drawing.Size(255, 27);
             this.text12.TabIndex = 2;
             this.text12.TabStop = false;
             this.text12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -94,11 +100,13 @@
             // 
             // text14
             // 
+            this.text14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text14.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text14.Location = new System.Drawing.Point(393, 66);
+            this.text14.Location = new System.Drawing.Point(401, 72);
+            this.text14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text14.Name = "text14";
             this.text14.ReadOnly = true;
-            this.text14.Size = new System.Drawing.Size(286, 39);
+            this.text14.Size = new System.Drawing.Size(255, 27);
             this.text14.TabIndex = 3;
             this.text14.TabStop = false;
             this.text14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -106,11 +114,13 @@
             // 
             // text21
             // 
+            this.text21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text21.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text21.Location = new System.Drawing.Point(140, 146);
+            this.text21.Location = new System.Drawing.Point(176, 139);
+            this.text21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text21.Name = "text21";
             this.text21.ReadOnly = true;
-            this.text21.Size = new System.Drawing.Size(355, 35);
+            this.text21.Size = new System.Drawing.Size(316, 23);
             this.text21.TabIndex = 4;
             this.text21.TabStop = false;
             this.text21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -118,11 +128,13 @@
             // 
             // text22
             // 
+            this.text22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text22.Location = new System.Drawing.Point(209, 200);
+            this.text22.Location = new System.Drawing.Point(238, 184);
+            this.text22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text22.Name = "text22";
             this.text22.ReadOnly = true;
-            this.text22.Size = new System.Drawing.Size(286, 35);
+            this.text22.Size = new System.Drawing.Size(255, 23);
             this.text22.TabIndex = 5;
             this.text22.TabStop = false;
             this.text22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -130,11 +142,13 @@
             // 
             // text23
             // 
+            this.text23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text23.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text23.Location = new System.Drawing.Point(518, 197);
+            this.text23.Location = new System.Drawing.Point(512, 181);
+            this.text23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text23.Name = "text23";
             this.text23.ReadOnly = true;
-            this.text23.Size = new System.Drawing.Size(200, 39);
+            this.text23.Size = new System.Drawing.Size(178, 27);
             this.text23.TabIndex = 6;
             this.text23.TabStop = false;
             this.text23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -142,11 +156,13 @@
             // 
             // text24
             // 
+            this.text24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text24.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text24.Location = new System.Drawing.Point(140, 255);
+            this.text24.Location = new System.Drawing.Point(176, 229);
+            this.text24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text24.Name = "text24";
             this.text24.ReadOnly = true;
-            this.text24.Size = new System.Drawing.Size(355, 35);
+            this.text24.Size = new System.Drawing.Size(316, 23);
             this.text24.TabIndex = 7;
             this.text24.TabStop = false;
             this.text24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -154,11 +170,13 @@
             // 
             // text31
             // 
+            this.text31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text31.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text31.Location = new System.Drawing.Point(35, 336);
+            this.text31.Location = new System.Drawing.Point(83, 297);
+            this.text31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text31.Name = "text31";
             this.text31.ReadOnly = true;
-            this.text31.Size = new System.Drawing.Size(436, 35);
+            this.text31.Size = new System.Drawing.Size(388, 23);
             this.text31.TabIndex = 8;
             this.text31.TabStop = false;
             this.text31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -166,11 +184,13 @@
             // 
             // text32
             // 
+            this.text32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text32.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text32.Location = new System.Drawing.Point(261, 390);
+            this.text32.Location = new System.Drawing.Point(284, 342);
+            this.text32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text32.Name = "text32";
             this.text32.ReadOnly = true;
-            this.text32.Size = new System.Drawing.Size(211, 35);
+            this.text32.Size = new System.Drawing.Size(188, 23);
             this.text32.TabIndex = 9;
             this.text32.TabStop = false;
             this.text32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -178,11 +198,13 @@
             // 
             // text34
             // 
+            this.text34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text34.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text34.Location = new System.Drawing.Point(209, 445);
+            this.text34.Location = new System.Drawing.Point(238, 388);
+            this.text34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text34.Name = "text34";
             this.text34.ReadOnly = true;
-            this.text34.Size = new System.Drawing.Size(263, 35);
+            this.text34.Size = new System.Drawing.Size(234, 23);
             this.text34.TabIndex = 10;
             this.text34.TabStop = false;
             this.text34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -190,11 +212,13 @@
             // 
             // text33
             // 
+            this.text33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text33.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text33.Location = new System.Drawing.Point(490, 387);
+            this.text33.Location = new System.Drawing.Point(488, 339);
+            this.text33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text33.Name = "text33";
             this.text33.ReadOnly = true;
-            this.text33.Size = new System.Drawing.Size(200, 39);
+            this.text33.Size = new System.Drawing.Size(178, 27);
             this.text33.TabIndex = 11;
             this.text33.TabStop = false;
             this.text33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -202,11 +226,13 @@
             // 
             // text41
             // 
+            this.text41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text41.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text41.Location = new System.Drawing.Point(261, 12);
+            this.text41.Location = new System.Drawing.Point(284, 27);
+            this.text41.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text41.Name = "text41";
             this.text41.ReadOnly = true;
-            this.text41.Size = new System.Drawing.Size(353, 35);
+            this.text41.Size = new System.Drawing.Size(314, 23);
             this.text41.TabIndex = 12;
             this.text41.TabStop = false;
             this.text41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -214,11 +240,13 @@
             // 
             // text42
             // 
+            this.text42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text42.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text42.Location = new System.Drawing.Point(431, 70);
+            this.text42.Location = new System.Drawing.Point(435, 75);
+            this.text42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text42.Name = "text42";
             this.text42.ReadOnly = true;
-            this.text42.Size = new System.Drawing.Size(248, 35);
+            this.text42.Size = new System.Drawing.Size(221, 23);
             this.text42.TabIndex = 13;
             this.text42.TabStop = false;
             this.text42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -226,11 +254,13 @@
             // 
             // text43
             // 
+            this.text43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text43.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text43.Location = new System.Drawing.Point(700, 67);
+            this.text43.Location = new System.Drawing.Point(674, 73);
+            this.text43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text43.Name = "text43";
             this.text43.ReadOnly = true;
-            this.text43.Size = new System.Drawing.Size(123, 39);
+            this.text43.Size = new System.Drawing.Size(110, 27);
             this.text43.TabIndex = 14;
             this.text43.TabStop = false;
             this.text43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -238,11 +268,13 @@
             // 
             // text51
             // 
+            this.text51.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text51.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text51.Location = new System.Drawing.Point(35, 146);
+            this.text51.Location = new System.Drawing.Point(83, 139);
+            this.text51.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text51.Name = "text51";
             this.text51.ReadOnly = true;
-            this.text51.Size = new System.Drawing.Size(353, 35);
+            this.text51.Size = new System.Drawing.Size(314, 23);
             this.text51.TabIndex = 15;
             this.text51.TabStop = false;
             this.text51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -250,11 +282,13 @@
             // 
             // text52
             // 
+            this.text52.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text52.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text52.Location = new System.Drawing.Point(274, 201);
+            this.text52.Location = new System.Drawing.Point(296, 185);
+            this.text52.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text52.Name = "text52";
             this.text52.ReadOnly = true;
-            this.text52.Size = new System.Drawing.Size(221, 35);
+            this.text52.Size = new System.Drawing.Size(197, 23);
             this.text52.TabIndex = 16;
             this.text52.TabStop = false;
             this.text52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -262,11 +296,13 @@
             // 
             // text53
             // 
+            this.text53.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text53.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text53.Location = new System.Drawing.Point(518, 198);
+            this.text53.Location = new System.Drawing.Point(512, 182);
+            this.text53.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text53.Name = "text53";
             this.text53.ReadOnly = true;
-            this.text53.Size = new System.Drawing.Size(123, 39);
+            this.text53.Size = new System.Drawing.Size(110, 27);
             this.text53.TabIndex = 17;
             this.text53.TabStop = false;
             this.text53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -274,11 +310,13 @@
             // 
             // text61
             // 
+            this.text61.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text61.Font = new System.Drawing.Font("宋体", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text61.Location = new System.Drawing.Point(52, 313);
+            this.text61.Location = new System.Drawing.Point(98, 278);
+            this.text61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text61.Name = "text61";
             this.text61.ReadOnly = true;
-            this.text61.Size = new System.Drawing.Size(509, 58);
+            this.text61.Size = new System.Drawing.Size(453, 42);
             this.text61.TabIndex = 18;
             this.text61.TabStop = false;
             this.text61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -286,11 +324,13 @@
             // 
             // text62
             // 
+            this.text62.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.text62.Font = new System.Drawing.Font("宋体", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.text62.Location = new System.Drawing.Point(244, 390);
+            this.text62.Location = new System.Drawing.Point(269, 342);
+            this.text62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.text62.Name = "text62";
             this.text62.ReadOnly = true;
-            this.text62.Size = new System.Drawing.Size(509, 58);
+            this.text62.Size = new System.Drawing.Size(453, 42);
             this.text62.TabIndex = 19;
             this.text62.TabStop = false;
             this.text62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -298,9 +338,9 @@
             // 
             // Annual_two
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(978, 544);
+            this.ClientSize = new System.Drawing.Size(869, 453);
             this.Controls.Add(this.text62);
             this.Controls.Add(this.text61);
             this.Controls.Add(this.text53);
@@ -321,6 +361,7 @@
             this.Controls.Add(this.text12);
             this.Controls.Add(this.text13);
             this.Controls.Add(this.text11);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Annual_two";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "年度总结报告";
