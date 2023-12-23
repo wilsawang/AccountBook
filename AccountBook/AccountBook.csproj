@@ -72,6 +72,12 @@
     <Compile Include="Annual.Designer.cs">
       <DependentUpon>Annual.cs</DependentUpon>
     </Compile>
+    <Compile Include="Annual_two.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Annual_two.Designer.cs">
+      <DependentUpon>Annual_two.cs</DependentUpon>
+    </Compile>
     <Compile Include="Chgpwd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Annual.resx">
       <DependentUpon>Annual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Annual_two.resx">
+      <DependentUpon>Annual_two.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Chgpwd.resx">
       <DependentUpon>Chgpwd.cs</DependentUpon>

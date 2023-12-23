@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.PictureBox pictureBox13;
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.text_single_in = new System.Windows.Forms.TextBox();
+            this.text_sum_in = new System.Windows.Forms.TextBox();
+            this.text_single_out = new System.Windows.Forms.TextBox();
+            this.text_sum_out = new System.Windows.Forms.TextBox();
+            this.btn_next = new System.Windows.Forms.Button();
             this.y5 = new System.Windows.Forms.PictureBox();
             this.y4 = new System.Windows.Forms.PictureBox();
             this.y3 = new System.Windows.Forms.PictureBox();
@@ -42,9 +47,7 @@
             this.y7 = new System.Windows.Forms.PictureBox();
             this.y12 = new System.Windows.Forms.PictureBox();
             this.y6 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            pictureBox13 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox13)).BeginInit();
+            this.y0 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.y5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.y4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.y3)).BeginInit();
@@ -57,17 +60,69 @@
             ((System.ComponentModel.ISupportInitialize)(this.y7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.y12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.y6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y0)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox13
+            // timer1
             // 
-            pictureBox13.Image = global::AccountBook.Properties.Resources.savingpot;
-            pictureBox13.Location = new System.Drawing.Point(327, 353);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new System.Drawing.Size(335, 179);
-            pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pictureBox13.TabIndex = 12;
-            pictureBox13.TabStop = false;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // text_single_in
+            // 
+            this.text_single_in.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.text_single_in.Location = new System.Drawing.Point(49, 418);
+            this.text_single_in.Name = "text_single_in";
+            this.text_single_in.ReadOnly = true;
+            this.text_single_in.Size = new System.Drawing.Size(322, 35);
+            this.text_single_in.TabIndex = 13;
+            this.text_single_in.TabStop = false;
+            this.text_single_in.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // text_sum_in
+            // 
+            this.text_sum_in.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.text_sum_in.Location = new System.Drawing.Point(604, 418);
+            this.text_sum_in.Name = "text_sum_in";
+            this.text_sum_in.ReadOnly = true;
+            this.text_sum_in.Size = new System.Drawing.Size(328, 35);
+            this.text_sum_in.TabIndex = 14;
+            this.text_sum_in.TabStop = false;
+            this.text_sum_in.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // text_single_out
+            // 
+            this.text_single_out.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.text_single_out.Location = new System.Drawing.Point(49, 463);
+            this.text_single_out.Name = "text_single_out";
+            this.text_single_out.ReadOnly = true;
+            this.text_single_out.Size = new System.Drawing.Size(322, 35);
+            this.text_single_out.TabIndex = 15;
+            this.text_single_out.TabStop = false;
+            this.text_single_out.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // text_sum_out
+            // 
+            this.text_sum_out.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.text_sum_out.Location = new System.Drawing.Point(604, 463);
+            this.text_sum_out.Name = "text_sum_out";
+            this.text_sum_out.ReadOnly = true;
+            this.text_sum_out.Size = new System.Drawing.Size(328, 35);
+            this.text_sum_out.TabIndex = 16;
+            this.text_sum_out.TabStop = false;
+            this.text_sum_out.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btn_next
+            // 
+            this.btn_next.Enabled = false;
+            this.btn_next.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_next.Location = new System.Drawing.Point(360, 269);
+            this.btn_next.Name = "btn_next";
+            this.btn_next.Size = new System.Drawing.Size(262, 54);
+            this.btn_next.TabIndex = 17;
+            this.btn_next.Text = "点击开启下一页";
+            this.btn_next.UseVisualStyleBackColor = true;
+            this.btn_next.Visible = false;
+            this.btn_next.Click += new System.EventHandler(this.btn_next_Click);
             // 
             // y5
             // 
@@ -189,16 +244,26 @@
             this.y6.TabIndex = 0;
             this.y6.TabStop = false;
             // 
-            // timer1
+            // y0
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.y0.Image = global::AccountBook.Properties.Resources.savingpot;
+            this.y0.Location = new System.Drawing.Point(327, 353);
+            this.y0.Name = "y0";
+            this.y0.Size = new System.Drawing.Size(335, 179);
+            this.y0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.y0.TabIndex = 18;
+            this.y0.TabStop = false;
             // 
             // Annual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 544);
-            this.Controls.Add(pictureBox13);
+            this.Controls.Add(this.btn_next);
+            this.Controls.Add(this.text_sum_out);
+            this.Controls.Add(this.text_single_out);
+            this.Controls.Add(this.text_sum_in);
+            this.Controls.Add(this.text_single_in);
             this.Controls.Add(this.y5);
             this.Controls.Add(this.y4);
             this.Controls.Add(this.y3);
@@ -211,11 +276,11 @@
             this.Controls.Add(this.y7);
             this.Controls.Add(this.y12);
             this.Controls.Add(this.y6);
+            this.Controls.Add(this.y0);
             this.Name = "Annual";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "年度总结报告";
             this.Load += new System.EventHandler(this.Annual_Load);
-            ((System.ComponentModel.ISupportInitialize)(pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.y5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.y4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.y3)).EndInit();
@@ -228,7 +293,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.y7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.y12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.y6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.y0)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -247,5 +314,11 @@
         private System.Windows.Forms.PictureBox y4;
         private System.Windows.Forms.PictureBox y5;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox text_single_in;
+        private System.Windows.Forms.TextBox text_sum_in;
+        private System.Windows.Forms.TextBox text_single_out;
+        private System.Windows.Forms.TextBox text_sum_out;
+        private System.Windows.Forms.Button btn_next;
+        private System.Windows.Forms.PictureBox y0;
     }
 }
