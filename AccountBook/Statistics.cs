@@ -21,6 +21,8 @@ namespace AccountBook
         //初始化
         private void Statistics_Load(object sender, EventArgs e)
         {
+            start_picker.Value = monthCalendar.TodayDate;
+            end_picker.Value = monthCalendar.TodayDate;
             txt_length.Text = "1天";
         }
         //日历选中日期更改函数
