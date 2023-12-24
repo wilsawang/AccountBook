@@ -41,9 +41,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(323, 73);
+            this.label1.Location = new System.Drawing.Point(431, 97);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 33);
+            this.label1.Size = new System.Drawing.Size(191, 43);
             this.label1.TabIndex = 0;
             this.label1.Text = "请先登录";
             // 
@@ -51,36 +52,40 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(190, 150);
+            this.label2.Location = new System.Drawing.Point(253, 200);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 30);
+            this.label2.Size = new System.Drawing.Size(177, 40);
             this.label2.TabIndex = 1;
             this.label2.Text = "用户名：";
             // 
             // uidbox
             // 
             this.uidbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uidbox.Location = new System.Drawing.Point(329, 152);
+            this.uidbox.Location = new System.Drawing.Point(439, 203);
+            this.uidbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.uidbox.Name = "uidbox";
-            this.uidbox.Size = new System.Drawing.Size(231, 31);
+            this.uidbox.Size = new System.Drawing.Size(307, 39);
             this.uidbox.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(190, 218);
+            this.label3.Location = new System.Drawing.Point(253, 291);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 30);
+            this.label3.Size = new System.Drawing.Size(177, 40);
             this.label3.TabIndex = 3;
             this.label3.Text = "密  码：";
             // 
             // upwdbox
             // 
             this.upwdbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.upwdbox.Location = new System.Drawing.Point(329, 220);
+            this.upwdbox.Location = new System.Drawing.Point(439, 293);
+            this.upwdbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.upwdbox.Name = "upwdbox";
-            this.upwdbox.Size = new System.Drawing.Size(231, 31);
+            this.upwdbox.Size = new System.Drawing.Size(307, 39);
             this.upwdbox.TabIndex = 4;
             this.upwdbox.UseSystemPasswordChar = true;
             // 
@@ -89,9 +94,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(325, 301);
+            this.label4.Location = new System.Drawing.Point(433, 401);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
+            this.label4.Size = new System.Drawing.Size(143, 33);
             this.label4.TabIndex = 6;
             this.label4.Text = "立即注册";
             this.label4.Click += new System.EventHandler(this.btn_register_click);
@@ -99,9 +105,10 @@
             // submit
             // 
             this.submit.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.submit.Location = new System.Drawing.Point(448, 288);
+            this.submit.Location = new System.Drawing.Point(597, 384);
+            this.submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.submit.Name = "submit";
-            this.submit.Size = new System.Drawing.Size(112, 51);
+            this.submit.Size = new System.Drawing.Size(149, 68);
             this.submit.TabIndex = 7;
             this.submit.Text = "确认";
             this.submit.UseVisualStyleBackColor = true;
@@ -109,9 +116,9 @@
             // 
             // AccountBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(778, 444);
+            this.ClientSize = new System.Drawing.Size(1037, 592);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.upwdbox);
@@ -119,9 +126,10 @@
             this.Controls.Add(this.uidbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccountBook";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AccountBook";
+            this.Text = "登录";
             this.ResumeLayout(false);
             this.PerformLayout();
 
