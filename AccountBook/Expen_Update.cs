@@ -120,7 +120,7 @@ namespace AccountBook
             }
             else
             {
-                MessageBox.Show("记录支出失败!");
+                MessageBox.Show("账单更改失败!");
             }
         }
     }

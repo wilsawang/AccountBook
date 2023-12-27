@@ -34,7 +34,7 @@ namespace AccountBook
             string confirm_pwd = txt_pwd_confirm.Text.Trim();
             if (new_pwd == "")
             {
-                MessageBox.Show("新密码不能为空");
+                MessageBox.Show("新密码不能为空！");
             }
             else if (new_pwd.Length < 8)
             {
@@ -48,17 +48,17 @@ namespace AccountBook
                     string sql = "update users set upwd='" + confirm_pwd + "'where uid='" + uid + "'";
                     if (AccountBook.ExecuteSql(sql) > 0)
                     {
-                        MessageBox.Show("修改成功");
+                        MessageBox.Show("修改成功！");
                         this.Close();
                     }
                     else
                     {
-                        MessageBox.Show("修改失败");
+                        MessageBox.Show("修改失败！");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("两次输入密码不一致，请重新输入");
+                    MessageBox.Show("两次输入密码不一致，请重新输入！");
                 }
             }
         }

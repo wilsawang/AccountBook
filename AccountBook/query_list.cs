@@ -211,7 +211,7 @@ namespace AccountBook
             }
             else
             {
-                MessageBox.Show("请仅选中需要修改的一行，暂不支持批量修改");
+                MessageBox.Show("请仅选中需要修改的一行，暂不支持批量修改！");
             }
         }
 
